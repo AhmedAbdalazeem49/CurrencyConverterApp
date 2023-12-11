@@ -1,0 +1,161 @@
+/* Google Fonts Font "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #675afe;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  width: 400px;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: #fff;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50% , -50%);
+}
+
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper header h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #675afe;
+}
+
+.wrapper header img {
+  width: 70px;
+  animation: up-down 3s infinite ease-in-out alternate;
+}
+
+@keyframes up-down {
+  0% , 100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0px;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input {
+  border: 1px solid #675afe;
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border: 3px solid #675afe;
+  padding: 0 14px;
+}
+
+form .drop-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+
+.select-box img {
+  max-width: 25px;
+}
+
+.drop-list .icon {
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form .exchange-rate {
+  font-size: 20px;
+  margin: 20px 0 30px;
+  text-align: center;
+  color: #675afe;
+  font-weight: 500;
+}
+
+.exchange-rate span.number {
+  color: green;
+  font-weight: bold;
+}
+
+.exchange-rate .equal {
+  color: #000;
+}
+
+.exchange-rate .currency {
+  color: #675afe;
+}
+
+form button {
+  height: 52px;
+  color: #fff;
+  background-color: #675afe;
+  font-size: 17px;
+  cursor: pointer;
+}
